@@ -108,6 +108,7 @@ nav.scrolled {
 .hero {
   min-height: 100svh;
   color: #fff;
+  background: var(--coal);
   display: flex; align-items: center;
   padding: 150px 0 160px;
   overflow: hidden;
@@ -524,6 +525,8 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
   .burger.open span:nth-child(2) { opacity: 0; }
   .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .nav-cta { display: none; }
+  /* Safari: absolute video in flex+min-height container stretches niet mee */
+  .hero { display: block; padding: 130px 0 150px; min-height: 0; }
   .logo-chip img { height: 46px; }
   .logo-chip { padding: 6px 12px; }
   footer .logo-chip img { height: 42px; }
