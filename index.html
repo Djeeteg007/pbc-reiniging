@@ -109,7 +109,7 @@ nav.scrolled {
   min-height: 100svh;
   color: #fff;
   display: flex; align-items: center;
-  padding: 150px 0 110px;
+  padding: 150px 0 160px;
   overflow: hidden;
 }
 .hero video.bg {
@@ -175,7 +175,7 @@ nav.scrolled {
 .usp span { font-size: .83rem; color: var(--muted); line-height: 1.5; display: block; }
 
 /* Wave divider */
-.wave { display: block; width: 100%; height: 90px; margin-top: -1px; background: transparent; position: relative; z-index: 3; margin-top: -90px; }
+.wave { display: block; width: 100%; height: 90px; background: transparent; position: relative; z-index: 3; margin-top: -90px; pointer-events: none; }
 
 /* ---------- Sections base ---------- */
 .section { padding: 110px 0; }
@@ -206,7 +206,7 @@ nav.scrolled {
   background: linear-gradient(to top, rgba(24,23,23,.35), transparent 55%);
 }
 .svc .icon {
-  position: absolute; left: 24px; bottom: -28px; z-index: 2;
+  position: absolute; left: 24px; top: -34px; z-index: 2;
   width: 68px; height: 68px; border-radius: 50%;
   background: #fff;
   box-shadow: 0 10px 26px -8px rgba(24, 23, 23, .45);
@@ -284,7 +284,7 @@ nav.scrolled {
 .video-section .section-head h2 { color: #fff; }
 .video-section .section-head p { color: rgba(255,255,255,.6); }
 .video-section .kicker { background: rgba(237,28,36,.16); }
-.video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.video-grid { display: grid; grid-template-columns: 1fr; max-width: 840px; margin: 0 auto; gap: 26px; }
 .vid-card {
   position: relative; border-radius: var(--radius); overflow: hidden;
   aspect-ratio: 16/9; cursor: pointer; background: #000;
@@ -614,9 +614,9 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
       <article class="svc reveal">
         <div class="photo">
           <img class="ph" src="assets/img/glas-2.jpg" alt="Glasbewassing van een winkelpui" loading="lazy">
-          <span class="icon"><img src="assets/icons/glas.png" alt=""></span>
         </div>
         <div class="body">
+            <span class="icon"><img src="assets/icons/glas.png" alt=""></span>
           <h3>Glasbewassing</h3>
           <p>Streeploos schone ramen met zuiver osmosewater — milieuvriendelijk, zonder zeepresten en veilig tot op grote hoogte.</p>
           <a class="more" href="#contact">Meer weten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -625,9 +625,9 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
       <article class="svc reveal" data-delay="1">
         <div class="photo">
           <img class="ph" src="assets/img/gevel-1.jpg" alt="Gevel- en dakreiniging" loading="lazy">
-          <span class="icon"><img src="assets/icons/hogedruk.png" alt=""></span>
         </div>
         <div class="body">
+            <span class="icon"><img src="assets/icons/hogedruk.png" alt=""></span>
           <h3>Gevel- &amp; dakreiniging</h3>
           <p>Hogedruk- of stoomreiniging die groene aanslag, vervuiling en verwering verwijdert. Uw pand oogt weer als nieuw.</p>
           <a class="more" href="#contact">Meer weten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -636,9 +636,9 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
       <article class="svc reveal" data-delay="2">
         <div class="photo">
           <img class="ph" src="assets/img/zon-1.jpg" alt="Reiniging van zonnepanelen" loading="lazy">
-          <span class="icon"><img src="assets/icons/zonnepanelen.png" alt=""></span>
         </div>
         <div class="body">
+            <span class="icon"><img src="assets/icons/zonnepanelen.png" alt=""></span>
           <h3>Zonnepanelen reinigen</h3>
           <p>Met osmosewater en carbon telescoopsystemen halen we het maximale rendement uit uw panelen — krasvrij gereinigd.</p>
           <a class="more" href="#contact">Meer weten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -647,9 +647,9 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
       <article class="svc reveal">
         <div class="photo">
           <img class="ph" src="assets/img/special-1.jpg" alt="Specialistische reiniging" loading="lazy">
-          <span class="icon"><img src="assets/icons/special.png" alt=""></span>
         </div>
         <div class="body">
+            <span class="icon"><img src="assets/icons/special.png" alt=""></span>
           <h3>Specialistische reiniging</h3>
           <p>Bijzondere materialen zoals kunststoffen en Trespa vragen om maatwerk. Wij kennen de juiste methode per ondergrond.</p>
           <a class="more" href="#contact">Meer weten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -658,9 +658,9 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
       <article class="svc reveal" data-delay="1">
         <div class="photo">
           <img class="ph" src="assets/img/gevel-2.jpg" alt="Geïmpregneerde gevel" loading="lazy">
-          <span class="icon"><img src="assets/icons/impregneren.png" alt=""></span>
         </div>
         <div class="body">
+            <span class="icon"><img src="assets/icons/impregneren.png" alt=""></span>
           <h3>Impregneren</h3>
           <p>Waterafstotende coating die gevels en oppervlakken langdurig beschermt tegen vocht, vuil en weersinvloeden.</p>
           <a class="more" href="#contact">Meer weten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -669,9 +669,9 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
       <article class="svc reveal" data-delay="2">
         <div class="photo">
           <img class="ph" src="assets/img/boot-2.jpg" alt="Bootreiniging van een jacht" loading="lazy">
-          <span class="icon"><img src="assets/icons/boot.png" alt=""></span>
         </div>
         <div class="body">
+            <span class="icon"><img src="assets/icons/boot.png" alt=""></span>
           <h3>Bootreiniging</h3>
           <p>Complete reiniging van uw boot, afgewerkt met UV-bescherming. Uw schip ligt er weer stralend bij in de haven.</p>
           <a class="more" href="#contact">Meer weten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -766,14 +766,7 @@ footer { background: var(--coal); color: rgba(255,255,255,.65); padding: 80px 0 
           <source src="assets/video/clip1.mp4" type="video/mp4">
         </video>
         <div class="play"><span class="pbtn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
-        <span class="cap">Dakreiniging in uitvoering</span>
-      </div>
-      <div class="vid-card reveal" data-delay="1" data-video>
-        <video preload="none" poster="assets/video/clip2-poster.jpg" playsinline loop muted>
-          <source src="assets/video/clip2.mp4" type="video/mp4">
-        </video>
-        <div class="play"><span class="pbtn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
-        <span class="cap">Reiniging met telescoopsysteem</span>
+        <span class="cap">Gevelreiniging in uitvoering</span>
       </div>
     </div>
   </div>
